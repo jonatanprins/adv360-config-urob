@@ -19,8 +19,8 @@
 #define MOD 6
 #define MS 7
 
-#define LEFT 14 15 16 17 18 19 20 28 29 30 31 32 33 34 42 43 44 45 46 47 54 55 56 57 58 
-#define RIGHT 7 8 9 10 11 12 13 21 22 23 24 25 26 27 35 36 37 38 39 40 41 48 49 50 51 52 53
+#define A_LEFT 14 15 16 17 18 19 20 28 29 30 31 32 33 34 42 43 44 45 46 47 54 55 56 57 58 
+#define A_RIGHT 7 8 9 10 11 12 13 21 22 23 24 25 26 27 35 36 37 38 39 40 41 48 49 50 51 52 53
 #define THUMBS 68 69 70 71 72 73
 
 //                0        1        2        3        4        5        6             7        8        9        10       11       12       13
@@ -57,7 +57,7 @@
           global-quick-tap-ms = <150>;
           flavor = "balanced";  
           bindings = <&kp>, <&kp>;
-          hold-trigger-key-positions = <RIGHT THUMBS>;
+          hold-trigger-key-positions = <A_RIGHT THUMBS>;
           hold-trigger-on-release;
         };
         amr: alpha_mods_r {
@@ -69,7 +69,7 @@
           global-quick-tap-ms = <150>;
           flavor = "balanced";  
           bindings = <&kp>, <&kp>;
-          hold-trigger-key-positions = <LEFT THUMBS>;
+          hold-trigger-key-positions = <A_LEFT THUMBS>;
           hold-trigger-on-release;
         };
         tm: thumb_mods {
