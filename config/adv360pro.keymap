@@ -38,16 +38,14 @@
         zmk,matrix_transform = &urobs_transform;
     };
 
-    combos {
-        compatible = "zmk,combos";
-        caps_word {
-            timeout-ms = <50>;
-            key-positions = <32 73>;
-            bindings = <&caps_word>;
-        };
-    };
-
     behaviors {
+        cw: caps_word {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CAPS_WORD"
+            #binding-cells: <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&kp SPACE> <&caps_word>;
+        };
         aml: alpha_mods_l {
           compatible = "zmk,behavior-hold-tap";
           label = "ALPHA_MODS_LEFT";
@@ -78,7 +76,7 @@
           #binding-cells = <2>;
           tapping-term-ms = <200>;
           quick-tap-ms = <175>;
-          global-quick-tap-ms = <150>;
+          global-quick-tap-ms = <0>;
           flavor = "balanced";  
           bindings = <&mo>, <&kp>;
         };
@@ -108,7 +106,7 @@
                 &kp LSHFT &kp Z     &kp X     &kp C     &kp V     &kp B                              &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp RSHFT
                 &mo FN    &kp GRAVE &kp CAPS  &kp LEFT  &kp RIGHT                                              &kp DOWN    &kp UP  &kp LBKT  &kp RBKT  &mo FN
                                                                   &kp LCTRL &kp LALT       &kp LGUI  &kp RCTRL
-                                                        &tm SYM BSPC  &kp DEL   &kp HOME       &kp PG_UP &kp ENTER &kp SPACE
+                                                        &tm SYM BSPC  &mo SYM   &kp HOME       &kp PG_UP &kp ENTER &cw
                                                                             &kp END        &kp PG_DN
             >;
         };
@@ -155,12 +153,12 @@
         sym {
             bindings = <
                 ___       ___          ___          ___          ___          ___          ___              ___         ___          ___              ___          ___          ___          ___
-                ___       &kp SQT      &kp LT       &kp GT       &kp DQT      ___          ___              ___         &kp AMPS     ___              &kp LBKT     &kp RBKT     &kp PRCNT    ___
+                ___       &kp SQT      &kp LT       &kp GT       &kp DQT      ___          ___              ___         &kp AMPS     &kp UNDER        &kp LBKT     &kp RBKT     &kp PRCNT    ___
                 ___       &kp EXCL     &kp MINUS    &kp KP_PLUS  &kp EQUAL    &kp HASH     ___              ___         &kp PIPE     &kp COLON        &kp LPAR     &kp RPAR     &kp QMARK    ___
                 ___       &kp CARET    &kp FSLH     &kp STAR     &kp BSLH     ___                                       &kp TILDE    &kp DLLR         &kp LBRC     &kp RBRC     &kp AT       ___
                 ___       ___          ___          ___          ___                                                                 ___              ___          ___          ___          ___
                                                                               ___          ___              ___         ___        
-                                                                 ___          ___          ___              ___         ___          ___
+                                                                 ___          ___          ___              ___         ___          &kp COLON
                                                                                            ___              ___
             >;
         };
