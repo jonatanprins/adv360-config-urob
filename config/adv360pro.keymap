@@ -44,7 +44,7 @@
             label = "CAPS_WORD";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            bindings = <&kp SPACE> <&caps_word>;
+            bindings = <&kp SPACE>, <&caps_word>;
         };
         aml: alpha_mods_l {
           compatible = "zmk,behavior-hold-tap";
