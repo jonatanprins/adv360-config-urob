@@ -42,7 +42,7 @@
         cw: caps_word {
             compatible = "zmk,behavior-mod-morph";
             label = "CAPS_WORD";
-            #binding-cells: <0>;
+            #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&kp SPACE> <&caps_word>;
         };
