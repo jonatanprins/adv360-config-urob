@@ -153,9 +153,9 @@
         sym {
             bindings = <
                 ___       ___          ___          ___          ___          ___          ___              ___         ___          ___              ___          ___          ___          ___
-                ___       &kp SQT      &kp LT       &kp GT       &kp DQT      ___          ___              ___         &kp AMPS     &kp UNDER        &kp LBKT     &kp RBKT     &kp PRCNT    ___
-                ___       &kp EXCL     &kp MINUS    &kp KP_PLUS  &kp EQUAL    &kp HASH     ___              ___         &kp PIPE     &kp COLON        &kp LPAR     &kp RPAR     &kp QMARK    ___
-                ___       &kp CARET    &kp FSLH     &kp STAR     &kp BSLH     ___                                       &kp TILDE    &kp DLLR         &kp LBRC     &kp RBRC     &kp AT       ___
+                ___       &kp SQT      &kp LT       &kp GT       &kp DQT      ___          ___              ___         &kp AMPS     &kp UNDER        &kp RBKT     &kp LBKT     &kp PRCNT    ___
+                ___       &kp EXCL     &kp MINUS    &kp KP_PLUS  &kp EQUAL    &kp HASH     ___              ___         &kp PIPE     &kp COLON        &kp RPAR     &kp LPAR     &kp QMARK    ___
+                ___       &kp CARET    &kp FSLH     &kp STAR     &kp BSLH     ___                                       &kp TILDE    &kp DLLR         &kp RBRC     &kp LBRC     &kp AT       ___
                 ___       ___          ___          ___          ___                                                                 ___              ___          ___          ___          ___
                                                                               ___          ___              ___         ___        
                                                                  ___          ___          ___              ___         ___          &kp ENTER
